@@ -1,47 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <!--Definição de idioma utilizado-->
+
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <!--padrão de caracteres que iremos utilizar-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Adaptação para qualquer dispositivo-->
     <title>Meu perfil</title>
-    <link rel="stylesheet" href="assets/Estilo/style.css">
+    <link rel="stylesheet" href="assets/Estilo/style.css" />
+    <!--Linkando com o CSS-->
   </head>
   <body>
-    <ul>
+    <!--A classe pode ser utilizada em difrentes elementos, já o id pode ser usado somente em um elemento-->
+    <!-- # para id e . para class-->
+    <ul id="menu">
       <li>
         <a href="index.html">Home</a>
+        <!--Criando um link de ref para home e contato-->
       </li>
       <li>
-        <a href="contato.html" target="_blank">Contato</a>
+        <a href="contato.html">Contato</a>
       </li>
     </ul>
-    <h1 style= "text-align:center; color: blue" ></style>Sobre a Carol</h1>
+    <!--Título-->
+    <h1 class="center">Sobre a Carol</h1>
 
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatum
-      sequi maxime minima quo illo corporis nam laborum nobis provident maiores
-      inventore similique numquam accusantium, voluptate impedit dolorem
-      ducimus. Consectetur. Lorem ipsum dolor, sit amet consectetur adipisicing
-      elit. Nostrum soluta, dolorem doloremque beatae amet laudantium ipsam.
-      Eveniet eaque, deleniti illum, placeat neque assumenda vero saepe, impedit
-      maiores veritatis odit fugiat!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptate.
-      Officia iste quia possimus atque voluptatibus laborum nulla et quidem
-      consequuntur consequatur! Quidem reprehenderit accusamus quisquam velit
-      deserunt, labore esse. Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Nostrum nemo veniam cumque. Incidunt, aliquid nesciunt ullam
-      doloremque deserunt sit, quaerat voluptates reiciendis consequuntur
-      voluptatum amet quia quasi veritatis architecto ipsam.
-    </p>
-    <img
-      src="Assets/Imagens/minhafoto.jfif"
-      alt="Foto do criador desse conteúdo"
-    />
+    <div class="container">
+      <div>
+        <img
+          class="br-50 wh t1"
+          src="Assets/Imagens/minhafoto.jfif"
+          alt="Foto do criador desse conteúdo"
+        />
+        <!--Importante a utilização do alt para descriação de imagem (acessibilidade)-->
+      </div>
 
-    <h2>Meu video predileto:</h2>
+      <div class="t1">
+        <p class="justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+          voluptatum sequi maxime minima quo illo corporis nam laborum nobis
+          provident maiores inventore similique numquam accusantium, voluptate
+          impedit dolorem ducimus. Consectetur. Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Nostrum soluta, dolorem doloremque
+          beatae amet laudantium ipsam. Eveniet eaque, deleniti illum, placeat
+          neque assumenda vero saepe, impedit maiores veritatis odit fugiat!
+        </p>
+        <p class="justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+          voluptate. Officia iste quia possimus atque voluptatibus laborum nulla
+          et quidem consequuntur consequatur! Quidem reprehenderit accusamus
+          quisquam velit deserunt, labore esse. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Nostrum nemo veniam cumque. Incidunt,
+          aliquid nesciunt ullam doloremque deserunt sit, quaerat voluptates
+          reiciendis consequuntur voluptatum amet quia quasi veritatis
+          architecto ipsam.
+        </p>
+      </div>
+    </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Gpc_A0F-1YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2 class="center">Meu video predileto:</h2>
+
+    <div class="container mb-50">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Gpc_A0F-1YE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <!--video-->
+    </div>
+
+    <footer>
+      <div class="container">
+        <a href="https://github.com/carolmatosss" target="_blank">
+          <img
+            class="tm-rede t1"
+            class="t1"
+            src="Assets/Imagens/github.png"
+            alt="Logo github"
+          />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/carolyne-matos-71a80718a/"
+          target="_blank"
+        >
+          <img
+            class="tm-rede t1"
+            src="Assets/Imagens/linkedin.png"
+            alt="Logo Linkedin"
+          />
+        </a>
+      </div>
+      <p class="center">Todos os direitos reservados a Carolyne Matos &copy</p>
+    </footer>
   </body>
 </html>
