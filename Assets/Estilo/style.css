@@ -1,12 +1,25 @@
+/*Estilos geral
+
+*/
+
+body {
+    background-color: #40A989;
+  }
+
+
 /*
 Estilos da página index.html
 */
 .center{
     text-align: center; /*Alinhando texto*/
+    color: rgb(71, 14, 57);
+    font: Bookman, URW Bookman L, serif;
+
 }
 
 .justify{
     text-align: justify;
+    
 }
 /*FlexBox, Div pai*/
 .container{ 
@@ -14,31 +27,32 @@ Estilos da página index.html
     flex-flow: row ;
     justify-content: center;
     align-items: center;
+    color: #330733
 }
+
 
 /*Ajustando menu em linha*/
 #menu li{
     display: inline;
-    padding: 20px;
-    
+    padding: 21px;  
 }
+    
+
 
 #menu li a{
     text-decoration: none;
-    color:black;
     font-size:21px;
-
+    color: #330733
 }
 
 #menu li a:hover {
     color: grey;
-    
 }
 
 .t1{
    padding: 30px;
+   font:Bookman, URW Bookman L, serif;
 }
-
 
 .br-50{
     border-radius: 50%;
@@ -65,3 +79,5 @@ Estilos da página contato.html
 .ml-50{
     margin-left: 50px;
 }
+
+

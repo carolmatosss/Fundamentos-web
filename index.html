@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <!--Definição de idioma utilizado-->
-
   <head>
     <meta charset="UTF-8" />
-    <!--padrão de caracteres que iremos utilizar-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Adaptação para qualquer dispositivo-->
     <title>Meu perfil</title>
     <link rel="stylesheet" href="assets/Estilo/style.css" />
-    <!--Linkando com o CSS-->
   </head>
   <body>
-    <!--A classe pode ser utilizada em difrentes elementos, já o id pode ser usado somente em um elemento-->
-    <!-- # para id e . para class-->
+    
+    <!--Menu-->
     <ul id="menu">
       <li>
         <a href="index.html">Home</a>
@@ -23,17 +18,19 @@
         <a href="contato.html">Contato</a>
       </li>
     </ul>
+
     <!--Título-->
     <h1 class="center">Sobre a Carol</h1>
 
+    <!--Texto e foto-->
     <div class="container">
+
       <div>
         <img
           class="br-50 wh t1"
           src="Assets/Imagens/minhafoto.jfif"
           alt="Foto do criador desse conteúdo"
         />
-        <!--Importante a utilização do alt para descriação de imagem (acessibilidade)-->
       </div>
 
       <div class="t1">
@@ -59,18 +56,11 @@
       </div>
     </div>
 
+    <!--Video-->
     <h2 class="center">Meu video predileto:</h2>
 
     <div class="container mb-50">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/Gpc_A0F-1YE"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PfpseQkhhgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <!--video-->
     </div>
 
@@ -98,5 +88,6 @@
       </div>
       <p class="center">Todos os direitos reservados a Carolyne Matos &copy</p>
     </footer>
-  </body>
+
+
 </html>
